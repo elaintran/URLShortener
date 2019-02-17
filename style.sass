@@ -1,0 +1,54 @@
+$gray: #ededed
+$dark-gray: #777777
+$off-black: #252525
+$red: #ff4747
+
+html, body
+	margin: 0
+	padding: 0
+	font-family: "Roboto", sans-serif
+
+.container
+	height: 100vh
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+
+.converter
+	text-align: center
+
+.title
+	margin-top: 0
+	margin-bottom: 20px
+
+.url-input, .submit
+	border: 1px solid transparent
+	&:active, &:focus
+		outline: none
+
+.fa-link
+	padding: 0 10px 0px 17px
+	color: $dark-gray
+
+.bar
+	background-color: $gray
+	border-radius: 5px
+
+.url-input
+	background-color: $gray
+	color: $off-black
+	font-weight: 500
+	height: 50px
+	width: 400px
+	//padding: 0 20px
+	border-radius: 5px
+	&::placeholder
+		color: $dark-gray
+
+.submit
+	background-color: $red
+	color: white
+	width: 50px
+	height: 50px
+	border-radius: 0px 5px 5px 0px
