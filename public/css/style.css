@@ -26,10 +26,12 @@ html, body {
   padding: 0 10px 0px 17px;
   color: #777777; }
 
+.bar-container {
+  width: 600px; }
+
 .bar {
   background-color: #ededed;
-  border-radius: 5px;
-  width: 600px; }
+  border-radius: 5px; }
 
 .url-input {
   background-color: #ededed;
