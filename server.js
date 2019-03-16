@@ -2,9 +2,9 @@ var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
 
-app.get("/api/shorturl/:new?", function(req, res) {
-	var site = req.params;
-	res.json({"original url": site});
+app.get("/api/shorturl/:new(*)", function(req, res) {
+	var newURL = req.params.new;
+	res.json({"original url": newURL});
 })
 
 //express server & serve HTML file
