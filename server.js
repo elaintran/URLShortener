@@ -1,7 +1,14 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
-var shortURL = require('./models/shorturl');
+
+//read env files in console
+const dotenv = require('dotenv');
+dotenv.config();
+//var shortURL = require('./models/shorturl');
+
+//connect to mongodb
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}, function() {console.log(mongoose.connection.readyState)});
 
 app.get("/api/shorturl/:new(*)", function(req, res) {
 	var newURL = req.params.new;
