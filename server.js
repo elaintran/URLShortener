@@ -1,5 +1,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
+var bodyparser = require('body-parser');
 var app = express();
 
 //read env files in console
@@ -12,6 +13,9 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}, function() {con
 
 app.get("/api/shorturl/:new(*)", function(req, res) {
 	var newURL = req.params.new;
+	if (err) {
+		res.json({"error": "invalid URL"})
+	}
 	res.json({"original url": newURL});
 })
 

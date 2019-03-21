@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: #1d212f; }
 
 .container {
   height: 100vh;
@@ -15,7 +16,11 @@ html, body {
 
 .title {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px; }
 
 .url-input, .submit {
   border: 1px solid transparent; }
@@ -45,7 +50,7 @@ html, body {
     color: #777777; }
 
 .submit {
-  background-color: #ff4747;
+  background-color: #01b5d5;
   color: white;
   width: 54px;
   height: 54px;
